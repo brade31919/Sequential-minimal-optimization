@@ -19,8 +19,8 @@ The main function is SMO(X,Y,eps,tol,type,ul,Pdata,Sigma).
 
 Input arguments for SMO function
 ===========================================
-X= The feature matrix (2d array)=
-Y= Target matrix (1d array)
+1. X= The feature matrix (2d array)
+2. Y= Target matrix (1d array)
 eps= Convergence criteria--show what should the difference between lagranage multiplier between two consecutive iteration has to be to exit. Example eps=0.001 (scalar)
 tol= Distance within that the lagrange multiplier will be mapped to zero or upper limit 'C'. Best value could be:0.001 (scalar)
 type= What Kernel function one likes to use. Currently Linear 'L' or Gaussian function are supported 'G' (char)
