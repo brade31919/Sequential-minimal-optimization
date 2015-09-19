@@ -21,19 +21,19 @@ Input arguments for SMO function
 ===========================================
 1. X= The feature matrix (2d array)
 2. Y= Target matrix (1d array)
-eps= Convergence criteria--show what should the difference between lagranage multiplier between two consecutive iteration has to be to exit. Example eps=0.001 (scalar)
-tol= Distance within that the lagrange multiplier will be mapped to zero or upper limit 'C'. Best value could be:0.001 (scalar)
-type= What Kernel function one likes to use. Currently Linear 'L' or Gaussian function are supported 'G' (char)
-ul= upper and lower bound for lagrange multipliers. Example [0, 1]. If the upper is infinity write [0 Inf] (1d array) 
-Pdata= Percenateg of data being used for training data. The rest will be used for validation (scalar in terms of percentage)
-Sigma= Gaussian variance. If liner kernel write zero. 
+3. eps= Convergence criteria--show what should the difference between lagranage multiplier between two consecutive iteration has to be to exit. Example eps=0.001 (scalar)
+4. tol= Distance within that the lagrange multiplier will be mapped to zero or upper limit 'C'. Best value could be:0.001 (scalar)
+5. type= What Kernel function one likes to use. Currently Linear 'L' or Gaussian function are supported 'G' (char)
+6. ul= upper and lower bound for lagrange multipliers. Example [0, 1]. If the upper is infinity write [0 Inf] (1d array) 
+7. Pdata= Percenateg of data being used for training data. The rest will be used for validation (scalar in terms of percentage)
+8. Sigma= Gaussian variance. If liner kernel write zero. 
 
 Output arguments for SMO function
 ===========================================
-[alpha,b,TS]=SMO(X,Y,eps,tol,type,ul,Pdata,Sigma).
-alpha= array of lagrange multipliers (1d array)
-b= threshold value (scalar)
-TS= training size
-Training error= SMO prints out the error when a run is complete
-Confidence of hypothesis= SMO prints out the confidence when a run is complete
+1. [alpha,b,TS]=SMO(X,Y,eps,tol,type,ul,Pdata,Sigma).
+2. alpha= array of lagrange multipliers (1d array)
+3. b= threshold value (scalar)
+4. TS= training size
+5. Training error= SMO prints out the error when a run is complete
+6. Confidence of hypothesis= SMO prints out the confidence when a run is complete
 
