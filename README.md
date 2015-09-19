@@ -10,7 +10,7 @@ John C. Platt 2000. See publication for more detail: http://research.microsoft.c
 
 Benchmarks:
 =========================
-I have tested the code on UCI Ionosphere Data Set with a traning error less than 0.3 and confidence of more than 96% on the validation data. The training size was 200 and the validation size was 151.
+I have tested the code on UCI Ionosphere Data Set with a traning error less than 0.3% and confidence of more than 96% on the validation data. The training size was 200 and the validation size was 151.
 
 
 Function description:
